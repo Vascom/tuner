@@ -53,8 +53,7 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/com.githu
 %{_datadir}/applications/com.github.louis77.%{name}.desktop
 %{_datadir}/glib-2.0/schemas/com.github.louis77.%{name}.gschema.xml
 
-
-
 %changelog
-* Sun Nov 27 2022 Vasiliy Glazov <vascom2@gmail.com>
-- 
+* Sun Nov 27 2022 Vasiliy Glazov <vascom2@gmail.com> - 1.5.1-1
+- Initial packaging
+ 
