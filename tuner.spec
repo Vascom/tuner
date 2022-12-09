@@ -3,8 +3,8 @@ Version:        1.5.1
 Release:        1%{?dist}
 Summary:        Minimalist radio station player
 
-License:        GPLv3+
-URL:            https://github.com/louis77/tuner
+License:        GPL-3.0-or-later
+URL:            https://github.com/louis77/%{name}
 Source0:        %{url}/archive/refs/tags/%{version}.tar.gz
 
 BuildRequires:  gcc
@@ -54,6 +54,6 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/com.githu
 %{_datadir}/glib-2.0/schemas/com.github.louis77.%{name}.gschema.xml
 
 %changelog
-* Sun Nov 27 2022 Vasiliy Glazov <vascom2@gmail.com> - 1.5.1-1
+* Fri Dec 09 2022 Vasiliy Glazov <vascom2@gmail.com> - 1.5.1-1
 - Initial packaging
- 
+
