@@ -1,11 +1,12 @@
 Name:           tuner
 Version:        1.5.1
-Release:        1%{?dist}
+Release:        2%{?dist}
 Summary:        Minimalist radio station player
 
 License:        GPL-3.0-or-later
 URL:            https://github.com/louis77/%{name}
 Source0:        %{url}/archive/refs/tags/%{version}.tar.gz
+Patch0:		tuner-tracking-disable-default.patch
 
 BuildRequires:  gcc
 BuildRequires:  vala
@@ -29,7 +30,7 @@ Requires:       hicolor-icon-theme
 Discover and Listen to your favourite internet radio stations.
 
 %prep
-%autosetup
+%autosetup -p1
 
 
 %build
@@ -54,6 +55,9 @@ appstream-util validate-relax --nonet %{buildroot}%{_datadir}/metainfo/com.githu
 %{_datadir}/glib-2.0/schemas/com.github.louis77.%{name}.gschema.xml
 
 %changelog
+* Wed Dec 14 2022 Vasiliy Glazov <vascom2@gmail.com> - 1.5.1-2
+- Disable tracking by default
+
 * Fri Dec 09 2022 Vasiliy Glazov <vascom2@gmail.com> - 1.5.1-1
 - Initial packaging
 

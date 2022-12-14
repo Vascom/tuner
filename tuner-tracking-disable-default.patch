@@ -1,0 +1,12 @@
+diff -uNdr tuner-1.5.1_orig/data/com.github.louis77.tuner.gschema.xml tuner-1.5.1_new/data/com.github.louis77.tuner.gschema.xml
+--- tuner-1.5.1_orig/data/com.github.louis77.tuner.gschema.xml	2022-02-06 18:16:06.000000000 +0300
++++ tuner-1.5.1_new/data/com.github.louis77.tuner.gschema.xml	2022-12-14 15:24:02.684571380 +0300
+@@ -28,7 +28,7 @@
+             <description>All station starred by the user</description>
+         </key>
+         <key name="do-not-track" type="b">
+-            <default>false</default>
++            <default>true</default>
+             <summary>Do not track</summary>
+             <description>If enabled, do not send usage information to radio-browser.org</description>
+         </key>
